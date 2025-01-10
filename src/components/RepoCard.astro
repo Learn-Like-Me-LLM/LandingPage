@@ -1,0 +1,27 @@
+---
+import type { Repository } from '../config/repositories';
+
+interface Props {
+  title: string;
+  repositories: Repository[];
+}
+
+const { title, repositories } = Astro.props;
+---
+
+<div class="rounded-lg border p-4 shadow-sm">
+  <h2 class="text-xl font-semibold mb-4">{title}</h2>
+  <div class="space-y-3">
+    {repositories.map((repo) => (
+      <a
+        href={repo.url}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="block p-3 rounded-md hover:bg-gray-50 transition-colors"
+      >
+        <h3 class="font-medium text-blue-600">{repo.name}</h3>
+        <p class="text-sm text-gray-600">{repo.description}</p>
+      </a>
+    ))}
+  </div>
+</div> 
