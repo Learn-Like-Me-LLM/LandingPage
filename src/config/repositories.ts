@@ -12,31 +12,41 @@ interface RepositoryGroups {
 export const repositories: RepositoryGroups = {
   tools: [
     {
+      name: "tmux",
+      url: "https://github.com/Learn-Like-Me-LLM/tmux",
+      description: "...a terminal multiplexer that allows users to create, access, and control multiple terminal sessions within a single window."
+    },
+    {
       name: "Cursor",
       url: "https://github.com/Learn-Like-Me-LLM/Cursor",
-      description: "AI Powered Code Editor"
+      description: "...AI Powered Code Editor"
     },
     {
       name: "Anthropic > Claude",
       url: "https://github.com/Learn-Like-Me-LLM/Anthropic_Claude",
-      description: "Large Language Model"
+      description: "...Large Language Model"
+    },
+    {
+      name: "Neovim",
+      url: "https://github.com/Learn-Like-Me-LLM/nvim",
+      description: "...a modern, highly extensible text editor built for speed and flexibility."
     },
   ],
   topics: [
     {
       name: "Linear Algebra",
       url: "https://github.com/Learn-Like-Me-LLM/Linear-Algebra",
-      description: "Linear algebra is the branch of mathematics that deals with linear equations, matrices, vectors, and vector spaces, focusing on how these structures interact and transform through operations like addition and multiplication."
+      description: "...a the branch of mathematics that deals with linear equations, matrices, vectors, and vector spaces, focusing on how these structures interact and transform through operations like addition and multiplication."
     },
     {
       name: "Calculus",
       url: "https://www.youtube.com/watch?v=xvFZjo5PgG0",
-      description: "Coming Soon..."
+      description: "...Coming Soon"
     },
     {
       name: "Probability & Statistics",
       url: "https://www.youtube.com/watch?v=xvFZjo5PgG0",
-      description: "Coming Soon..."
+      description: "...Coming Soon"
     },
   ]
 } 
