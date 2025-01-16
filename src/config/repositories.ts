@@ -22,31 +22,41 @@ export const repositories: RepositoryGroups = {
       description: "...AI Powered Code Editor"
     },
     {
+      name: "Neovim",
+      url: "https://github.com/Learn-Like-Me-LLM/nvim",
+      description: "...a modern, highly extensible text editor built for speed and flexibility."
+    },
+    {
       name: "Anthropic > Claude",
       url: "https://github.com/Learn-Like-Me-LLM/Anthropic_Claude",
       description: "...Large Language Model"
     },
     {
-      name: "Neovim",
-      url: "https://github.com/Learn-Like-Me-LLM/nvim",
-      description: "...a modern, highly extensible text editor built for speed and flexibility."
+      name: "Google > Gemini",
+      url: "https://gemini.google.com/",
+      description: "...Large Language Model / Large Research Model"
+    },
+    {
+      name: "Open AI > ChatGPT",
+      url: "https://chatgpt.com/",
+      description: "...Large Language Model"
     },
   ],
   topics: [
     {
       name: "Linear Algebra",
       url: "https://github.com/Learn-Like-Me-LLM/Linear-Algebra",
-      description: "...a the branch of mathematics that deals with linear equations, matrices, vectors, and vector spaces, focusing on how these structures interact and transform through operations like addition and multiplication."
+      description: "...branch of mathematics that deals with linear equations, matrices, vectors, and vector spaces, focusing on how these structures interact and transform through operations like addition and multiplication."
     },
     {
       name: "Calculus",
       url: "https://www.youtube.com/watch?v=xvFZjo5PgG0",
-      description: "...Coming Soon"
+      description: "...branch of mathematics that deals with change. It has two main branches: differential calculus and integral calculus. Differential calculus is concerned with the instantaneous rate of change of a function, while integral calculus is concerned with the accumulation of quantities."
     },
     {
       name: "Probability & Statistics",
       url: "https://www.youtube.com/watch?v=xvFZjo5PgG0",
-      description: "...Coming Soon"
+      description: "...two related branches of mathematics that deal with the analysis and interpretation of data. Probability is the study of chance and randomness, while statistics is the study of how to collect, organize, and analyze data."
     },
   ]
 } 
