@@ -1,28 +1,20 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import RepoCard from '../components/RepoCard.astro';
+import Sidebar from '../components/Sidebar.astro';
 import { repositories } from '../config/repositories';
 import cx from 'classnames';
 ---
 
 <Layout title="Learn Like Me">
-  <main class={cx(
-    "min-h-screen", 
-    "flex flex-col items-center justify-center", 
-    "bg-gradient-to-br from-indigo-500 to-purple-600",
-    "border-2 border-pink-500 border-dashed"
-  )}>
-    <div class={cx(
-      "flex items-center justify-center", 
-      "gap-6 px-5",
-      "border-2 border-pink-500 border-dashed"
+  <div class="flex min-h-screen">
+    <Sidebar repositories={repositories} />
+    <main class={cx(
+      "flex-1",
+      "flex flex-col items-center justify-center", 
+      "bg-gradient-to-br from-indigo-500 to-purple-600",
     )}>
-      <div class={cx("flex","w-1/2")}>
-        <RepoCard title="Tools" repositories={repositories.tools} />
-      </div>
-      <div class="w-1/2">
-        <RepoCard title="Topics" repositories={repositories.topics} />
-      </div>
-    </div>
-  </main>
+      
+    </main>
+  </div>
 </Layout>
