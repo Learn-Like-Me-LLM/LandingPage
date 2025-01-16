@@ -22,14 +22,24 @@ export const repositories: RepositoryGroups = {
       description: "...AI Powered Code Editor"
     },
     {
+      name: "Neovim",
+      url: "https://github.com/Learn-Like-Me-LLM/nvim",
+      description: "...a modern, highly extensible text editor built for speed and flexibility."
+    },
+    {
       name: "Anthropic > Claude",
       url: "https://github.com/Learn-Like-Me-LLM/Anthropic_Claude",
       description: "...Large Language Model"
     },
     {
-      name: "Neovim",
-      url: "https://github.com/Learn-Like-Me-LLM/nvim",
-      description: "...a modern, highly extensible text editor built for speed and flexibility."
+      name: "Google > Gemini",
+      url: "https://gemini.google.com/",
+      description: "...Large Language Model / Large Research Model"
+    },
+    {
+      name: "Open AI > ChatGPT",
+      url: "https://chatgpt.com/",
+      description: "...Large Language Model"
     },
   ],
   topics: [
