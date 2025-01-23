@@ -1,20 +1,17 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import RepoCard from '../components/RepoCard.astro';
-import Sidebar from '../components/Sidebar.astro';
-import { repositories } from '../config/repositories';
 import cx from 'classnames';
 ---
 
 <Layout title="Learn Like Me">
-  <div class="flex min-h-screen">
-    <Sidebar repositories={repositories} />
+  <div class="h-full w-full">
     <main class={cx(
-      "flex-1",
+      "w-full h-full",
       "flex flex-col items-center justify-center", 
       "bg-gradient-to-br from-indigo-500 to-purple-600",
     )}>
-      
+      <span>fuck</span>
     </main>
   </div>
 </Layout>

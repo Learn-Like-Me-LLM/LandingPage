@@ -1,7 +1,7 @@
 {
   "name": "tremendous-telescope",
   "type": "module",
-  "version": "0.1.1-SidebarMenu(V1)-AddedLanguagesSection",
+  "version": "0.1.2-UpdatedLayout",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
