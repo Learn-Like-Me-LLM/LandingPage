@@ -1,7 +1,7 @@
 {
   "name": "tremendous-telescope",
   "type": "module",
-  "version": "0.2.0-Inspiration",
+  "version": "0.3.0-UpdatedSidebarLinks",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",

@@ -1,6 +1,7 @@
 export interface Repository {
   name: string;
-  url: string;
+  url?: string;
+  github?: string;
   description: string | null;
 }
 
@@ -14,22 +15,22 @@ export const repositories: RepositoryGroups = {
   tools: [
     {
       name: "tmux",
-      url: "https://github.com/Learn-Like-Me-LLM/tmux",
+      github: "https://github.com/Learn-Like-Me-LLM/tmux",
       description: "...a terminal multiplexer that allows users to create, access, and control multiple terminal sessions within a single window."
     },
     {
       name: "Cursor",
-      url: "https://github.com/Learn-Like-Me-LLM/Cursor",
+      github: "https://github.com/Learn-Like-Me-LLM/Cursor",
       description: "...AI Powered Code Editor"
     },
     {
       name: "Neovim",
-      url: "https://github.com/Learn-Like-Me-LLM/nvim",
+      github: "https://github.com/Learn-Like-Me-LLM/nvim",
       description: "...a modern, highly extensible text editor built for speed and flexibility."
     },
     {
       name: "Anthropic > Claude",
-      url: "https://github.com/Learn-Like-Me-LLM/Anthropic_Claude",
+      github: "https://github.com/Learn-Like-Me-LLM/Anthropic_Claude",
       description: "...Large Language Model"
     },
     {
@@ -46,17 +47,20 @@ export const repositories: RepositoryGroups = {
   topics: [
     {
       name: "Linear Algebra",
-      url: "https://github.com/Learn-Like-Me-LLM/Linear-Algebra",
+      url: "https://llm.app.reedturgeon.com?path=linear-algebra",
+      github: "https://github.com/Learn-Like-Me-LLM/Linear-Algebra",
       description: "...branch of mathematics that deals with linear equations, matrices, vectors, and vector spaces, focusing on how these structures interact and transform through operations like addition and multiplication."
     },
     {
       name: "Calculus",
-      url: "https://www.youtube.com/watch?v=xvFZjo5PgG0",
+      url: "https://llm.app.reedturgeon.com?path=calculus",
+      github: "https://www.youtube.com/watch?v=xvFZjo5PgG0",
       description: "...branch of mathematics that deals with change. It has two main branches: differential calculus and integral calculus. Differential calculus is concerned with the instantaneous rate of change of a function, while integral calculus is concerned with the accumulation of quantities."
     },
     {
       name: "Probability & Statistics",
-      url: "https://www.youtube.com/watch?v=xvFZjo5PgG0",
+      url: "https://llm.app.reedturgeon.com?path=probability-and-statistics",
+      github: "https://www.youtube.com/watch?v=xvFZjo5PgG0",
       description: "...two related branches of mathematics that deal with the analysis and interpretation of data. Probability is the study of chance and randomness, while statistics is the study of how to collect, organize, and analyze data."
     },
   ],

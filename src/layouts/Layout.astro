@@ -49,16 +49,35 @@ const { title } = Astro.props;
 						<h1 class="text-2xl font-bold text-gray-900 mb-1">
 							Inspiration
 						</h1>
-						<p class="text-gray-700">
-							<a 
-								href="https://www.scotthyoung.com/blog/myprojects/mit-challenge-2/?utm_source=learnlikeme" 
-								class="text-indigo-600 hover:text-indigo-800 underline"
-								target="_blank"
-							>
-								The MIT Challenge
-							</a>
-							serves as an inspiring example of self-directed learning and educational innovation. It showcases the potential for motivated individuals to acquire high-level knowledge and skills through unconventional means, leveraging freely available educational resources.
-						</p>
+						
+						<ul class="flex flex-col gap-2">
+							{[
+								{
+									title: "The MIT Challenge",
+									description: "serves as an inspiring example of self-directed learning and educational innovation. It showcases the potential for motivated individuals to acquire high-level knowledge and skills through unconventional means, leveraging freely available educational resources.",
+									link: "https://www.scotthyoung.com/blog/myprojects/mit-challenge-2/?utm_source=learnlikeme"
+								},
+								{
+									title: "Awesome Github Repositories",
+									description: "are a collection of curated lists of resources for learning and building that have been collected by the community!",
+									link: "https://github.com/sindresorhus/awesome"
+								}
+							].map(({title, description, link}) => {	
+								return (
+									<li>
+										<p class="text-gray-700">
+											<a 
+												href={link} 
+												class="text-indigo-600 hover:text-indigo-800 underline"
+												target="_blank"
+											>
+												{title}</a>
+											{description}
+										</p>
+									</li>
+								)
+							})}
+						</ul>
 					</div>
 					
 					<slot />
