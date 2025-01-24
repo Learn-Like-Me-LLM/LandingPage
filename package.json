@@ -1,7 +1,7 @@
 {
-  "name": "tremendous-telescope",
+  "name": "llm.reedturgeon.com-landingpage",
   "type": "module",
-  "version": "0.3.0-UpdatedSidebarLinks",
+  "version": "0.3.1-UpdatedCurriculumCopy:Topics > Pathways",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",

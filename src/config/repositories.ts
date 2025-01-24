@@ -7,7 +7,7 @@ export interface Repository {
 
 interface RepositoryGroups {
   tools: Repository[];
-  topics: Repository[];
+  pathways: Repository[];
   languages: Repository[];
 }
 
@@ -44,7 +44,7 @@ export const repositories: RepositoryGroups = {
       description: "...Large Language Model"
     },
   ],
-  topics: [
+  pathways: [
     {
       name: "Linear Algebra",
       url: "https://llm.app.reedturgeon.com?path=linear-algebra",
